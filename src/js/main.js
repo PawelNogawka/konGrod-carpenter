@@ -70,6 +70,7 @@ function handleHeader() {
     let offset = section.offsetTop;
     let height = section.offsetHeight;
     let id = section.getAttribute("id");
+    let home = document.querySelector('.home')
 
     if (top >= offset - 72 && top < offset + height) {
       links.forEach(function (link) {
@@ -82,6 +83,12 @@ function handleHeader() {
           .querySelector(".header__nav-link[href*=" + id + "]")
           .classList.add("header__nav-link--active");
       });
+      
+    }
+    else if(top <= home.offsetTop){
+      links.forEach(function(link){
+       link.classList.remove('header__nav-link--active')
+      })
     }
   });
 
@@ -129,7 +136,7 @@ const swiper = new Swiper('.swiper', {
 
 
 window.addEventListener("scroll", handleHeader);
-window.addEventListener('load',handleHeader)
+window.addEventListener('scroll',handleHeader)
 
 burgerBtn.addEventListener("click", handleNav);
 
