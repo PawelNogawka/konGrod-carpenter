@@ -136,7 +136,7 @@ const swiper = new Swiper('.swiper', {
 
 
 window.addEventListener("scroll", handleHeader);
-window.addEventListener('scroll',handleHeader)
+window.addEventListener('load',handleHeader)
 
 burgerBtn.addEventListener("click", handleNav);
 
