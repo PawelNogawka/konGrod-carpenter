@@ -9,13 +9,11 @@
       content="Potrzebujesz fachowych usług stolarskich? Szukasz firmy, 
       która profesjonalnie zbuduje lub wyremontuje Twój dom? - Zapoznaj się z naszą ofertą!"
     />
-    <title>
-      Stolarnia Rabka Zdrój - Usługi stolarskie i budowlane | KonGrod
-    </title>
+    <title>Przedsiębiorstwo KonGrod - Usługi stolarskie | Rabka Zdrój</title>
     <link
       rel="shortcut icon"
       type="image/svg"
-      href="./dist/images/Logo_bialy.svg"
+      href="./dist/images/Logo_brazowy.svg"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,9 +25,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/css/style.min.css" />
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -64,7 +62,7 @@
         <a href="#offers" class="header__nav-link">oferta</a>
         <a href="#features" class="header__nav-link">dlaczego my?</a>
         <a href="#projects" class="header__nav-link">Realizacje</a>
-        <a href="#business" class="header__nav-link">B2B</a>
+        <a href="./b2b.html" class="header__nav-link">B2B</a>
         <a
           href="#contact"
           class="header__nav-link header__nav-link--cta btn-animation"
@@ -84,370 +82,469 @@
         ><i class="fa-solid fa-chevron-down bounce-top"></i
       ></a>
     </section>
-    <section id="about" class="about section-padding section">
-      <h2 class="section-heading">o nas</h2>
-      <div class="wrapper">
-        <div class="about__counter-container">
-          <div class="about__counter">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h3 class="about__counter-ammount">100+</h3>
-            <p class="about__counter-description">Wykonanych projektów</p>
+    <main class="main">
+      <section id="about" class="about section-padding section">
+        <h2 class="section-heading">o nas</h2>
+        <div class="wrapper">
+          <div class="about__counter-container">
+            <div class="about__counter">
+              <img
+                src="./dist/images/icons/montaz-elementow-drewnianych.svg"
+                alt="zamontowane elementy drewniane"
+                class="about__icon"
+              />
+              <h3 class="about__counter-ammount">100+</h3>
+              <p class="about__counter-description">Wykonanych projektów</p>
+            </div>
+            <div class="about__counter">
+              <img
+                src="./dist/images/icons/zadowoleni-klienci.svg"
+                alt="zadowoleni klienci"
+                class="about__icon"
+              />
+              <h3 class="about__counter-ammount">100+</h3>
+              <p class="about__counter-description">Zadowolonych klientów</p>
+            </div>
+            <div class="about__counter">
+              <img
+                src="./dist/images/icons/doswiadczenie-stolarskie.svg"
+                alt="doswiadczenie stolarskie"
+                class="about__icon"
+              />
+              <h3 class="about__counter-ammount">10</h3>
+              <p class="about__counter-description">lat doswiadczenia</p>
+            </div>
+            <div class="about__counter">
+              <img
+                src="./dist/images/icons/certyfikaty-stolarskie.svg"
+                alt="szkolenia oraz ukończone certyfukaty"
+                class="about__icon"
+              />
+              <h3 class="about__counter-ammount">10+</h3>
+              <p class="about__counter-description">Szkoleń i certyfikatów</p>
+            </div>
           </div>
-          <div class="about__counter">
-            <i class="fa-solid fa-people-group"></i>
-            <h3 class="about__counter-ammount">100+</h3>
-            <p class="about__counter-description">Zadowolonych klientów</p>
-          </div>
-          <div class="about__counter">
-            <i class="fa-solid fa-hourglass"></i>
-            <h3 class="about__counter-ammount">10</h3>
-            <p class="about__counter-description">lat doswiadczenia</p>
-          </div>
-          <div class="about__counter">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h3 class="about__counter-ammount">10+</h3>
-            <p class="about__counter-description">Szkoleń i certyfikatów</p>
-          </div>
-        </div>
-        <div class="about__content">
-          <div class="about__img-box">
-            <img
-              src="./dist/images/about-img.jpg"
-              alt="stolarnia konGrod"
-              class="about__img"
-            />
-          </div>
-          <div class="about__text-box">
-            <p class="about__text-big">
-              Jesteśmy firmą z długoletnim doświadczeniem, mamy za sobą wiele
-              realizacji, które zachwyciły naszych klientów. Pracujemy z pasją i
-              jesteśmy zorientowani na potrzeby klienta.
-            </p>
-            <p class="about__text-small">
-              Zajmiemy się Twoim projektem od planowania, przez zaprojektowanie
-              po przygotowanie wszelkich niezbędnych prac, takich jak
-              przygotowanie fundamentów, montaż pokryć dachowych, montaż
-              elektryki, czy innych instalacji, tak aby klient nie musiał się
-              niczym przejmować.
-            </p>
-            <a href="#form" class="about__btn btn-animation">zadaj pytanie</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="offers" class="offers section-padding section">
-      <h2 class="section-heading">Nasza oferta</h2>
-      <div class="wrapper">
-        <div class="offers__container">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-house"></i>
-            <h3 class="offers__name">Domy</h3>
-            <p class="offers__description">
-              Budujemy konstrukcje szkieletowe takie jak domy, domki letniskowe,
-              sezonowe i całoroczne. Zajmujemy się również budową domków na
-              zgłoszenie (35m2) oraz wymienianą drewnianych elewacji.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-warehouse"></i>
-            <h3 class="offers__name">Garaże i carporty</h3>
-            <p class="offers__description">
-              Budujemy garaże jedno, dwu i więcej stanowiskowe oraz wiaty
-              garażowe (carporty).
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-house-fire"></i>
-            <h3 class="offers__name">Sauny</h3>
-            <p class="offers__description">
-              Przeprowadzamy adaptacje pomieszczeń na sauny, również budujemy
-              wolnostojące sauny ogrodowe.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-person-shelter"></i>
-            <h3 class="offers__name">Altany</h3>
-            <p class="offers__description">
-              Wykonujemy wolnostojące altany ogrodowe zarówno otwarte jak i
-              zamknięte.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-stairs"></i>
-            <h3 class="offers__name">Schody</h3>
-            <p class="offers__description">
-              Zajmujemy się budową schodów wszelkiego rodzaju, takich jak:
-              schody wachlarzowe, spiralne, łamane, dwubiegunowe. Wykonujemy je
-              z drewna jak i metalu.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="offers__offer"
-          >
-            <i class="fa-solid fa-leaf"></i>
-            <h3 class="offers__name">tarasy i ogrody zimowe</h3>
-            <p class="offers__description">
-              Wykonujemy tarasy drewniane, również z zadaszeniem. Zaplanujemy
-              rozkład mebli ogrodowych, aby jak najlepiej komponowały się z
-              tarasem.
-            </p>
+          <div class="about__content">
+            <div class="about__img-box">
+              <img
+                src="./dist/images/o-nas.jpg"
+                alt="stolarnia konGrod"
+                class="about__img"
+              />
+            </div>
+            <div class="about__text-box">
+              <p class="about__text-big">
+                Jesteśmy firmą z długoletnim doświadczeniem, mamy za sobą wiele
+                realizacji, które zachwyciły naszych klientów. Pracujemy z pasją
+                i jesteśmy zorientowani na potrzeby klienta.
+              </p>
+              <p class="about__text-small">
+                Zajmiemy się Twoim projektem od planowania, przez
+                zaprojektowanie po przygotowanie wszelkich niezbędnych prac,
+                takich jak przygotowanie fundamentów, montaż pokryć dachowych,
+                montaż elektryki, czy innych instalacji, tak aby klient nie
+                musiał się niczym przejmować.
+              </p>
+              <a href="#form" class="about__btn btn-animation">zadaj pytanie</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="features" class="features section-padding section">
-      <h2 class="section-heading">Dlaczego My?</h2>
-      <div class="wrapper">
-        <div class="features__container">
-          <div class="features__feature features__feature--border-one">
-            <i class="fa-solid fa-calendar-check"></i>
-            <h3 class="features__name">przygotujemy plan</h3>
-          </div>
-          <div class="features__feature features__feature--border-two">
-            <i class="fa-solid fa-comments"></i>
-            <h3 class="features__name">doradzimy</h3>
-          </div>
-          <div class="features__feature features__feature--border-three">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <h3 class="features__name">zaprojektujemy</h3>
-          </div>
-          <div class="features__feature features__feature--border-four">
-            <i class="fa-solid fa-truck"></i>
-            <h3 class="features__name">przywieziemy</h3>
-          </div>
-          <div class="features__feature features__feature--border-five">
-            <i class="fa-solid fa-house-chimney"></i>
-            <h3 class="features__name">zamontujemy</h3>
-          </div>
-          <div class="features__feature features__feature--border-six">
-            <i class="fa-solid fa-gear"></i>
-            <h3 class="features__name">zoptymalizujemy</h3>
+      </section>
+      <section id="offers" class="offers section-padding section">
+        <h2 class="section-heading">Nasza oferta</h2>
+        <div class="wrapper">
+          <div class="offers__container">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/dom-z-drewna.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Domy</h3>
+              <p class="offers__description">
+                Budujemy konstrukcje szkieletowe takie jak domy, domki
+                letniskowe, sezonowe i całoroczne. Zajmujemy się również budową
+                domków na zgłoszenie (35m2) oraz wymienianą drewnianych
+                elewacji.
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/garaz-samochodowy.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Garaże i carporty</h3>
+              <p class="offers__description">
+                Budujemy garaże jedno, dwu i więcej stanowiskowe oraz wiaty
+                garażowe (carporty).
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/taras-z-drewna-odkryty.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Tarasy</h3>
+              <p class="offers__description">
+                Wykonujemy tarasy drewniane, również z zadaszeniem. Zaplanujemy
+                rozkład mebli ogrodowych, aby jak najlepiej komponowały się z
+                tarasem.
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/altana-ogrodowa-zamknieta.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Altany</h3>
+              <p class="offers__description">
+                Wykonujemy wolnostojące altany ogrodowe zarówno otwarte jak i
+                zamknięte.
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/schody-z-drewna.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Schody</h3>
+              <p class="offers__description">
+                Zajmujemy się budową schodów , takich jak: schody wachlarzowe,
+                spiralne, łamane, dwubiegunowe. Wykonujemy je z twardego drewna
+                na beton albo samonośne.
+              </p>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="offers__offer"
+            >
+              <img
+                src="./dist/images/icons/ogrod-zimowy.svg"
+                alt=""
+                class="offers__icon"
+              />
+              <h3 class="offers__name">Ogrody zimowe</h3>
+              <p class="offers__description">
+                Wykonujemy ogrody zimowe, jako obiekty wolnostojące zarówno jako
+                część architektury domu.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="features__box">
-          <div class="features__img-container">
-            <img
-              src="./dist/images/planowanie-budowy.jpg"
-              alt=""
-              class="features__img"
-            />
+      </section>
+      <section id="features" class="features section-padding section">
+        <h2 class="section-heading">Dlaczego My?</h2>
+        <div class="wrapper">
+          <div class="features__container">
+            <div class="features__feature features__feature--border-one">
+              <img
+                src="./dist/images/icons/plan.svg"
+                alt="plan działania"
+                class="features__icon"
+              />
+              <h3 class="features__name">przygotujemy plan</h3>
+            </div>
+            <div class="features__feature features__feature--border-two">
+              <img
+                src="./dist/images/icons/doradzimy.svg"
+                alt="doradzimy wybrać najlepszą opcję"
+                class="features__icon"
+              />
+              <h3 class="features__name">doradzimy</h3>
+            </div>
+            <div class="features__feature features__feature--border-three">
+              <img
+                src="./dist/images/icons/projekt-domu.svg"
+                alt="projekt domu"
+                class="features__icon"
+              />
+              <h3 class="features__name">zaprojektujemy</h3>
+            </div>
+            <div class="features__feature features__feature--border-four">
+              <img
+                src="./dist/images/icons/transport-materialow.svg"
+                alt="transport materiałów"
+                class="features__icon"
+              />
+              <h3 class="features__name">przywieziemy</h3>
+            </div>
+            <div class="features__feature features__feature--border-five">
+              <img
+                src="./dist/images/icons/montaż-elementow.svg"
+                alt="montaż elementów"
+                class="features__icon"
+              />
+              <h3 class="features__name">zamontujemy</h3>
+            </div>
+            <div class="features__feature features__feature--border-six">
+              <img
+                class="features__icon"
+                src="./dist/images/icons/optymalizacja.svg"
+                alt=""
+              />
+              <h3 class="features__name">zoptymalizujemy</h3>
+            </div>
           </div>
-          <div class="features__text-container">
-            <p class="features__text-big">
-              Kochamy to co robimy , dlatego podchodzimy z pełnym zaangażowaniem
-              i profesjonalizmem do wszystkich zleceń.
-            </p>
-            <p class="p features__text-small">
-              Dzięki doświadczeniu jakie posiada nasz zespół nie boimy się
-              nowych wyzwań i podejmiemy się wszelkich realizacji, a nasi
-              klienci cieszą się własnymi tarasami, altanami oraz innymi
-              projektami.
-            </p>
-            <div class="features__check-box">
-              <div class="features__check">
-                <i class="fa-solid fa-circle-check"></i>
-                <p class="features__check-text">Pasja i doświadczenie.</p>
+          <div class="features__box">
+            <div class="features__img-container">
+              <img
+                src="./dist/images/planowanie-budowy.jpg"
+                alt=""
+                class="features__img"
+              />
+            </div>
+            <div class="features__text-container">
+              <p class="features__text-big">
+                Kochamy to co robimy , dlatego podchodzimy z pełnym
+                zaangażowaniem i profesjonalizmem do wszystkich zleceń.
+              </p>
+              <p class="p features__text-small">
+                Dzięki doświadczeniu jakie posiada nasz zespół nie boimy się
+                nowych wyzwań i podejmiemy się wszelkich realizacji, a nasi
+                klienci cieszą się własnymi tarasami, altanami oraz innymi
+                projektami.
+              </p>
+              <div class="features__check-box">
+                <div class="features__check">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p class="features__check-text">Pasja i doświadczenie.</p>
+                </div>
+                <div class="features__check">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p class="features__check-text">
+                    Umiejętność łączenia tradycji z nowoczesnością.
+                  </p>
+                </div>
+                <div class="features__check">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p class="features__check-text">Wysokiej jakości materiały</p>
+                </div>
+                <div class="features__check">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p class="features__check-text">
+                    Terminowość oraz indywidualne podejście do klienta.
+                  </p>
+                </div>
               </div>
-              <div class="features__check">
-                <i class="fa-solid fa-circle-check"></i>
-                <p class="features__check-text">
-                  Umiejętność łączenia tradycji z nowoczesnością.
-                </p>
-              </div>
-              <div class="features__check">
-                <i class="fa-solid fa-circle-check"></i>
-                <p class="features__check-text">Wysokiej jakości materiały</p>
-              </div>
-              <div class="features__check">
-                <i class="fa-solid fa-circle-check"></i>
-                <p class="features__check-text">
-                  Terminowość oraz indywidualne podejście do klienta.
-                </p>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="business" class="business section-padding">
-      <h2 class="section-heading section-heading--white">B2B</h2>
-      <div class="wrapper">
-        <p class="business__info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo, amet
-          voluptatem asperiores necessitatibus voluptate porro eius repudiandae
-          earum consequatur.
-        </p>
-        <a href="#" class="business__btn btn-animation">Czytaj więcej</a>
-      </div>
-    </section>
-    <section id="projects" class="projects section-padding section">
-      <h2 class="section-heading">Nasze Realizacje</h2>
-      <div class="wrapper">
-        <div class="projects__container">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
+      </section>
+      <section id="business" class="business section-padding">
+        <h2 class="section-heading section-heading--white">B2B</h2>
+        <div class="wrapper">
+          <p class="business__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo,
+            amet voluptatem asperiores necessitatibus voluptate porro eius
+            repudiandae earum consequatur.
+          </p>
+          <a href="./b2b.html" class="business__btn btn-animation"
+            >Czytaj więcej</a
           >
-            <img
-              src="./dist/images/projects/taras-drewniany-zadaszony.jpg"
-              alt="zadaszony taras drewniany"
-              class="projects__img"
-            />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </section>
+      <section id="projects" class="projects section-padding section">
+        <h2 class="section-heading">Nasze Realizacje</h2>
+        <div class="wrapper">
+          <div class="projects__container">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/taras-drewniany-zadaszony.jpg"
+                alt="zadaszony taras drewniany"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/altana-wolnostojąca.jpg"
+                alt="altana wolnostojąca"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/taras-drewniany-odkryty.jpg"
+                alt="odkryty taras drewniany"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/dębowe-schody-gięte.jpg"
+                alt="dębowe schody gięte"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/zadaszony-garaż-wolnostojący.jpg"
+                alt="zadaszony garaż wolnostojący"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="projects__project"
+            >
+              <img
+                src="./dist/images/projects/sklep-z-drewna-klejonego.jpg"
+                alt="sklep z drewna klejonego"
+                class="projects__img"
+              />
+              <div class="projects__icon">
+                <img
+                  class="projects__icon-magn"
+                  src="./dist/images/icons/magnyfying.svg"
+                  alt="magnyfying"
+                />
+              </div>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
-          >
-            <img
-              src="./dist/images/projects/altana-wolnostojąca.jpg"
-              alt="altana wolnostojąca"
-              class="projects__img"
-            />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="projects__popup">
+            <div class="projects__arrow projects__arrow--left"></div>
+            <div class="projects__arrow projects__arrow--right"></div>
+
+            <div class="projects__btn">
+              <div class="projects__btn-line projects__btn-line--1"></div>
+              <div class="projects__btn-line projects__btn-line--2"></div>
             </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
-          >
-            <img
-              src="./dist/images/projects/taras-drewniany-odkryty.jpg"
-              alt="odkryty taras drewniany"
-              class="projects__img"
-            />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
-          >
-            <img
-              src="./dist/images/projects/dębowe-schody-gięte.jpg"
-              alt="dębowe schody gięte"
-              class="projects__img"
-            />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
-          >
-            <img
-              src="./dist/images/projects/zadaszony-garaż-wolnostojący.jpg"
-              alt="zadaszony garaż wolnostojący"
-              class="projects__img"
-            />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            class="projects__project"
-          >
+
             <img
               src="./dist/images/projects/sklep-z-drewna-klejonego.jpg"
               alt="sklep z drewna klejonego"
-              class="projects__img"
+              class="projects__popup-img"
             />
-            <div class="projects__icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </section>
+      <section id="customers" class="customers section-padding">
+        <h2 class="section-heading section-heading--white">
+          Co mówią o nas klienci?
+        </h2>
+        <div class="wrapper swiper">
+          <div class="customers__container swiper-wrapper">
+            <div class="customers__customer swiper-slide">
+              <i class="fa-solid fa-quote-right"></i>
+              <p class="customers__quote">
+                Firma p. Dawida wykonała perfekcyjnie moją białą pergolę.
+                Wszystko solidnie, w umówionym terminie, zgodnie z ustaleniami.
+                Panowie potrafili fachowo doradzić i idealnie dopasować pergolę
+                do trudnego terenu. Wszystko zorganizowali sami. Jakość na
+                najwyższym poziomie. Profesjonalne podejście do klienta. Cała
+                ekipa Super!! Bardzo polecam.
+              </p>
+              <p class="customers__name">Grazyna S</p>
+            </div>
+            <div class="customers__customer swiper-slide">
+              <i class="fa-solid fa-quote-right"></i>
+              <p class="customers__quote">
+                Polecam firmę KonGrod z Rabki i jej właściciela. Pan Dawid
+                wykonał dla mnie zadaszenie nad tarasem jak również przerobił
+                wiatę garażową, tak by była bardziej funkcjonalna i lepiej
+                wyglądała. Obie prace wykonane terminowo, fachowo, zgodnie z
+                ustaleniami. Mogę polecić jako solidna firma, która wykonuje
+                swoje prace jak najbardziej profesjonalnie i solidnie.
+              </p>
+              <p class="customers__name">Andrzej K</p>
+            </div>
+            <div class="customers__customer swiper-slide">
+              <i class="fa-solid fa-quote-right"></i>
+              <p class="customers__quote">
+                Zadaszenie tarasu prawie 50m kwadratowych wykonane bardzo
+                profesjonalnie. Każdy szczegół wykończony z pełną prezycją oraz
+                dokładnością. W szczególności jest brane pod uwagę zdanie
+                klienta a także do tego kreatywność, doradztwo ze strony firmy.
+                Bardzo miła atmosfera w czasie współpracy i z całego serca
+                polecam !!!
+              </p>
+              <p class="customers__name">Niebo J</p>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="projects__popup">
-          <span>&times;</span>
-          <img
-            src="./dist/images/projects/sklep-z-drewna-klejonego.jpg"
-            alt="sklep z drewna klejonego"
-            class="projects__popup-img"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="customers" class="customers section-padding">
-      <h2 class="section-heading section-heading--white">
-        Co mówią o nas klienci?
-      </h2>
-      <div class="wrapper swiper">
-        <div class="customers__container swiper-wrapper">
-          <div class="customers__customer swiper-slide">
-            <i class="fa-solid fa-quote-right"></i>
-            <p class="customers__quote">
-              Firma p. Dawida wykonała perfekcyjnie moją białą pergolę. Wszystko
-              solidnie, w umówionym terminie, zgodnie z ustaleniami. Panowie
-              potrafili fachowo doradzić i idealnie dopasować pergolę do
-              trudnego terenu. Wszystko zorganizowali sami. Jakość na najwyższym
-              poziomie. Profesjonalne podejście do klienta. Cała ekipa Super!!
-              Bardzo polecam.
-            </p>
-            <p class="customers__name">Grazyna S</p>
-          </div>
-          <div class="customers__customer swiper-slide">
-            <i class="fa-solid fa-quote-right"></i>
-            <p class="customers__quote">
-              Polecam firmę KonGrod z Rabki i jej właściciela. Pan Dawid wykonał
-              dla mnie zadaszenie nad tarasem jak również przerobił wiatę
-              garażową, tak by była bardziej funkcjonalna i lepiej wyglądała.
-              Obie prace wykonane terminowo, fachowo, zgodnie z ustaleniami.
-              Mogę polecić jako solidna firma, która wykonuje swoje prace jak
-              najbardziej profesjonalnie i solidnie.
-            </p>
-            <p class="customers__name">Andrzej K</p>
-          </div>
-          <div class="customers__customer swiper-slide">
-            <i class="fa-solid fa-quote-right"></i>
-            <p class="customers__quote">
-              Zadaszenie tarasu prawie 50m kwadratowych wykonane bardzo
-              profesjonalnie. Każdy szczegół wykończony z pełną prezycją oraz
-              dokładnością. W szczególności jest brane pod uwagę zdanie klienta
-              a także do tego kreatywność, doradztwo ze strony firmy. Bardzo
-              miła atmosfera w czasie współpracy i z całego serca polecam !!!
-            </p>
-            <p class="customers__name">Niebo J</p>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-
-     
-      </div>
-    </section>
+      </section>
+    </main>
     <section id="contact" class="contact section-padding section">
       <h2 class="section-heading">Kontakt</h2>
       <div class="wrapper">
@@ -563,7 +660,7 @@
         <a href="#offers" class="footer__link">oferta</a>
         <a href="#features" class="footer__link">dlaczego my?</a>
         <a href="#projects" class="footer__link">realizacje</a>
-        <a href="#business" class="footer__link">B2B</a>
+        <a href="./b2b.html" class="footer__link">B2B</a>
         <a href="#contact" class="footer__link">Kontakt</a>
       </div>
     </footer>
@@ -571,10 +668,10 @@
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
 
-    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/js/aos.min.js"></script>
+    <script src="./dist/js/gallery.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
   </body>
 </html>

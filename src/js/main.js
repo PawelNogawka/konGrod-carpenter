@@ -3,50 +3,9 @@ const nav = document.querySelector(".header__nav");
 const logo = document.querySelector(".header__logo");
 const links = document.querySelectorAll(".header__nav-link");
 const header = document.querySelector(".header");
-const closeBtn = document.querySelector(".projects__popup span");
 
-
-const imgIcon = document.querySelectorAll('.projects__icon i')
-const images = document.querySelectorAll('.projects__img');
 
 const sections = document.querySelectorAll(".section");
-
-imgIcon.forEach(function(icon){
-  icon.addEventListener('click', function(e){
-    let image = e.target.parentElement.previousElementSibling
-    let imageSrc = image.src
-    let imageAlt = image.getAttribute('alt')
-    
-    showPopup(imageSrc,imageAlt)
-  })
-})
-
-
-
-images.forEach(function(image){
-image.onclick = () => {
- 
-let src = image.getAttribute('src')
-let alt = image.getAttribute('alt')
-showPopup(src,alt)
-}
-})
-
-function showPopup(src,alt){
-
-  let popup = document.querySelector('.projects__popup');
-  let popupImg =  document.querySelector('.projects__popup-img');
-
-  popup.style.display = 'block';
-  popupImg.src = src;
-  popupImg.alt = alt
-}
-
-
-
-closeBtn.onclick = () =>{
-  document.querySelector('.projects__popup').style.display = 'none';
-}
 
 
 function handleNav() {
