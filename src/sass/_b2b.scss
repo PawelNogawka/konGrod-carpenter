@@ -40,7 +40,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem;
+    margin: 2rem 2rem 5rem 2rem;
   }
 
   &__advantage {
@@ -55,16 +55,40 @@
   }
 
   &__name {
-    margin: 1rem 0 2rem 0;
     font-size: 2.4rem;
     font-weight: 400;
     color: $text-color-first;
   }
+  &__description-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin:0 2rem;
+  }
 
-  &__info {
-    font-size: 1.6rem;
-    line-height: 150%;
-    color: $text-color-second;
+  &__img-box {
+    flex: 1 1 40rem;
+  }
+
+  &__img{
+    object-fit: cover;
+    width: 100%;
+  }
+  &__description-txt {
+    flex: 1 1 40rem;
+  }
+  &__info{
+    font-size:1.6rem;
+    line-height: 160%;
+    &--dark{
+      margin-bottom: 3rem;
+      color:$text-color-first;
+    }  
+    &--light{
+      color:$text-color-second;
+    }  
   }
 }
 
@@ -115,6 +139,11 @@
     }
     &__heading {
       font-size: 5rem;
+    }
+  }
+  .about-b2b {
+    &__container {
+      margin: 2rem 2rem 7rem 2rem;
     }
   }
 }

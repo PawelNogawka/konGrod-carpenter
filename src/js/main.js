@@ -1,4 +1,5 @@
-const burgerBtn = document.querySelector(".header__menu-btn");
+
+  const burgerBtn = document.querySelector(".header__menu-btn");
 const nav = document.querySelector(".header__nav");
 const logo = document.querySelector(".header__logo");
 const links = document.querySelectorAll(".header__nav-link");
@@ -98,4 +99,5 @@ window.addEventListener("scroll", handleHeader);
 window.addEventListener('load',handleHeader)
 
 burgerBtn.addEventListener("click", handleNav);
+
 

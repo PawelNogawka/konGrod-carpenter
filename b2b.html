@@ -22,12 +22,10 @@
       rel="stylesheet"
     />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+    <style>
+    .scroll-btn{display:none;position:fixed;bottom:4rem;right:4rem;width:4rem;height:4rem;background-color:#b7974f}.scroll-btn i{color:#fff;font-size:2.2rem}@media (min-width:1450px){.scroll-btn{display:flex;align-items:center;justify-content:center}}.bounce-top{display:block;animation:a 2s infinite both}@keyframes a{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}to{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}.businesses-b2b{padding:0 2rem;height:100vh;background-image:linear-gradient(90deg,rgba(28,28,28,.75) 100%,rgba(55,58,62,.75) 0),url(../images/wspolpraca-biznesowa-maly.jpg);background-repeat:no-repeat;background-position:50%;background-size:cover}.businesses-b2b,.businesses-b2b__banner{display:flex;align-items:center;justify-content:center}.businesses-b2b__banner{flex-direction:column;gap:2rem;color:#fff;text-align:center}.businesses-b2b__heading{font-size:2.6rem}.businesses-b2b__info{font-size:1.7rem}.businesses-b2b__btn{padding:1rem 3rem;background-color:#b7974f;color:#fff;font-size:1.6rem}@media (min-width:576px){.businesses-b2b__banner{gap:3rem}.businesses-b2b__heading{font-size:4rem}}@media (min-width:776px){.businesses-b2b__banner{gap:4rem}.businesses-b2b__heading{font-size:5rem}}@media (min-width:992px){.businesses-b2b{background-image:linear-gradient(90deg,rgba(28,28,28,.75) 100%,rgba(55,58,62,.75) 0),url(../images/wspolpraca-biznesowa-duzy.jpg)}.businesses-b2b__heading{font-size:7rem}}*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;text-transform:capitalize;font-family:Poppins,sans-serif}html{font-size:62.5%;scroll-behavior:smooth;scroll-padding:7rem}body{width:100%;overflow-x:hidden}.header{position:fixed;top:0;left:0;display:flex;align-items:center;justify-content:space-between;width:100%;padding:2rem 3rem;z-index:2}.header__logo{z-index:2}.header__logo svg{width:5.5rem;height:auto}.header__nav{position:absolute;top:0;left:0;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;transform:translateY(-100%);background-color:#fff;z-index:1}.header__nav-link{margin:1.5rem 0;font-size:2rem;color:#1c1c1c}.header__menu-btn{width:4rem;height:4rem;display:flex;flex-direction:column;justify-content:space-evenly;z-index:2;border:.1rem solid transparent;background:0}.header__bar{height:.2rem;background-color:#fff}.header__bar--one{width:50%;height:.2rem}.header__bar--two{width:100%}.header__bar--three{width:50%;margin-left:auto;height:.2rem}.home__arrow{position:absolute;bottom:5rem;left:50%;transform:translateX(-50%)}.home__arrow i{color:#fff;font-size:2.6rem}@media (min-width:768px){.header{padding-left:4rem;padding-right:4rem}.header__nav-link{font-size:2.4rem}}@media (min-width:992px){.header{padding:2rem 8rem}.header__nav{position:static;width:auto;height:auto;flex-direction:row;transform:translateY(0);background-color:transparent}.header__nav-link{margin:0 1.7rem;font-size:1.6rem;color:#fff}.header__nav-link:last-child{margin-left:6rem}.header__nav-link--cta{padding:1rem 3rem;background-color:#b7974f}.header__menu-btn{display:none}}
+    </style>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -35,7 +33,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html#" class="header__logo">
+      <a href="/" class="header__logo">
         <svg
           width="292.549"
           height="336.892"
@@ -52,11 +50,11 @@
           </g>
         </svg>
       </a>
-      <div class="header__menu-btn">
-        <div class="header__bar header__bar--one"></div>
-        <div class="header__bar header__bar--two"></div>
-        <div class="header__bar header__bar--three"></div>
-      </div>
+      <button class="header__menu-btn">
+        <span class="header__bar header__bar--one"></span>
+        <span class="header__bar header__bar--two"></span>
+        <span class="header__bar header__bar--three"></span>
+      </button>
       <nav class="header__nav">
         <a href="./index.html#about" class="header__nav-link">o nas</a>
         <a href="./index.html#offers" class="header__nav-link">oferta</a>
@@ -76,10 +74,10 @@
       <div class="businesses-b2b__banner">
         <h1 class="businesses-b2b__heading">współpraca biznesowa</h1>
         <p class="businesses-b2b__info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-          laborum.
+          zachecamy do zapoznania się z naszą ofertą współpracy biznesowej i
+          kontaktu.
         </p>
-        <a href="#" class="businesses-b2b__btn">skontaktuj się</a>
+        <a href="#about-b2b" class="businesses-b2b__btn">czytaj więcej</a>
       </div>
       <a href="#about-b2b" class="home__arrow"
         ><i class="fa-solid fa-chevron-down bounce-top"></i
@@ -91,73 +89,91 @@
         <div class="wrapper">
           <div class="about-b2b__container">
             <div class="about-b2b__advantage">
-              <img src="./dist/images/icons/rozwoj-jako-stolarz.svg" alt="rozwój stolarski" class="about-b2b__icon">
+              <img
+                src="./dist/images/icons/rozwoj-jako-stolarz.svg"
+                alt="rozwój stolarski"
+                class="about-b2b__icon"
+              />
               <h3 class="about-b2b__name">rozwój</h3>
-              <p class="about-b2b__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                laudantium, non illo earum iste odio.
-              </p>
             </div>
             <div class="about-b2b__advantage">
-              <img src="./dist/images/icons/nauka-stolarstwa.svg" alt="nauka stolarstwa" class="about-b2b__icon">
+              <img
+                src="./dist/images/icons/nauka-stolarstwa.svg"
+                alt="nauka stolarstwa"
+                class="about-b2b__icon"
+              />
               <h3 class="about-b2b__name">nauka</h3>
-              <p class="about-b2b__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                laudantium, non illo earum iste odio.
-              </p>
             </div>
             <div class="about-b2b__advantage">
-              <img src="./dist/images/icons/przychod-ze-stolarstwa.svg" alt="przychód stolarski" class="about-b2b__icon">
+              <img
+                src="./dist/images/icons/przychod-ze-stolarstwa.svg"
+                alt="przychód stolarski"
+                class="about-b2b__icon"
+              />
               <h3 class="about-b2b__name">przychód</h3>
-              <p class="about-b2b__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                laudantium, non illo earum iste odio.
-              </p>
+              >
             </div>
             <div class="about-b2b__advantage">
-              <img src="./dist/images/icons/optymalizacja-pracy-stolarza.svg" alt="optymalizacja pracy stolarskiej" class="about-b2b__icon">
+              <img
+                src="./dist/images/icons/optymalizacja-pracy-stolarza.svg"
+                alt="optymalizacja pracy stolarskiej"
+                class="about-b2b__icon"
+              />
               <h3 class="about-b2b__name">optymalizacja</h3>
-              <p class="about-b2b__info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                laudantium, non illo earum iste odio.
+            </div>
+          </div>
+          <div class="about-b2b__description-box">
+            <div class="about-b2b__img-box">
+              <img
+                src="./dist/images/wspolpraca-biznesowa-stolarstwo.jpg"
+                alt="współpraca biznesowa z firmą Kongrod"
+                class="about-b2b__img"
+              />
+            </div>
+            <div class="about-b2b__description-txt">
+              <p class="about-b2b__info about-b2b__info--dark">
+                Chcemy rozwijać się na wszelkie możliwe sposoby, dlatego
+                poszukujemy możliwości
+                <b class="bold">współpracy biznesowej</b> z innymi firmami.
+                Oferujemy uczciwe podejście do wykonywanych zadań i zawsze
+                podchodzimy do pracy z pełnym profesjonalizmem i zaangażowaniem,
+                i tego samego wymagamy od innych.
+              </p>
+              <p class="about-b2b__info about-b2b__info--light">
+                Zachęcamy do zapoznania się z ofertą przedstawioną poniżej oraz
+                do kontaktu. Jesteśmy również otwarci na bardzo wiele ciekawych
+                możliwości więc prosimy śmiało wychodzić z propozycjami
+                współpracy.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section class="offers-b2b section-padding">
-        <h2 class="section-heading">nasza oferta</h2>
+        <h2 class="section-heading">oferta</h2>
         <div class="wrapper">
           <div class="offers-b2b__container">
             <div class="offers-b2b__offer">
-
               <h3 class="offers-b2b__name">domy i domki szkieletowe</h3>
               <p class="offers-b2b__info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deleniti laborum error cupiditate dolorem explicabo quo.
               </p>
             </div>
             <div class="offers-b2b__offer">
-   
               <h3 class="offers-b2b__name">klejonka warstwowa</h3>
               <p class="offers-b2b__info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deleniti laborum error cupiditate dolorem explicabo quo.
               </p>
             </div>
             <div class="offers-b2b__offer">
-              <h3 class="offers-b2b__name">domy i domki szkieletowe</h3>
+              <h3 class="offers-b2b__name">inne mozliwości współpracy</h3>
               <p class="offers-b2b__info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deleniti laborum error cupiditate dolorem explicabo quo.
               </p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <section id="contact" class="contact section-padding">
-      <h2 class="section-heading">Kontakt</h2>
+    <section id="contact" class="contact section-padding section">
+      <h2 class="section-heading">skontaktuj się z nami</h2>
       <div class="wrapper">
         <div class="contact__container">
           <div class="contact__methods">
@@ -186,7 +202,9 @@
               </div>
               <div class="contact__method-info">
                 <h3 class="contact__name">email</h3>
-                <a href="#form" class="contact__link">KonGrod.pl@gmail.com</a>
+                <a href="#form" class="contact__link contact__link--lowercase"
+                  >kongrod.pl@gmail.com</a
+                >
               </div>
             </div>
             <div
@@ -211,24 +229,38 @@
             class="contact__form-container"
             id="form"
           >
-            <h4 class="contact__text">
-              Napisz do nas aby dowiedzieć się więcej.
-            </h4>
-            <form class="contact__form">
+            <h4 class="contact__text">napisz do nas aby poznać szczegoły</h4>
+            <form action="mail.php" method="post" class="contact__form">
               <div class="contact__input-box">
                 <label for="name" class="contact__label">Imię:</label>
-                <input type="text" class="contact__input" id="name" />
+                <input
+                  name="name"
+                  type="text"
+                  class="contact__input"
+                  id="name"
+                  required
+                />
               </div>
               <div class="contact__input-box">
                 <label for="email" class="contact__label">email:</label>
-                <input type="email" class="contact__input" id="email" />
+                <input
+                  name="email"
+                  type="email"
+                  class="contact__input contact__input--lowercase"
+                  required
+                />
               </div>
               <div class="contact__input-box">
                 <label for="textarea" class="contact__label">wiadomość:</label>
-                <textarea id="textarea" class="contact__textarea"></textarea>
+                <textarea
+                  name="message"
+                  id="textarea"
+                  class="contact__textarea"
+                  required
+                ></textarea>
               </div>
 
-              <button class="contact__button btn-animation">
+              <button type="submit" class="contact__button btn-animation">
                 Wyślij wiadomość
               </button>
             </form>
@@ -248,7 +280,7 @@
         ></iframe>
       </div>
       <div class="contact__social-media">
-        <h3 class="contact__social-heading">Śledź nasze projekty na:</h3>
+        <h4 class="contact__social-heading">Śledź nasze projekty na:</h4>
         <div class="contact__social-icons">
           <a
             href="https://pl-pl.facebook.com/KonGrod.eu/"
@@ -278,7 +310,12 @@
     <a href="#" class="scroll-btn btn-animation"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/js/aos.min.js"></script>

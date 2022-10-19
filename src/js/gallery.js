@@ -1,4 +1,5 @@
-const closeBtn = document.querySelector(".projects__btn");
+window.addEventListener("DOMContentLoaded",function(){
+  const closeBtn = document.querySelector(".projects__btn");
 const imgIcon = document.querySelectorAll(".projects__icon-magn");
 const images = [...document.querySelectorAll(".projects__img")];
 let popup = document.querySelector(".projects__popup");
@@ -94,3 +95,5 @@ function changeImg() {
   popupImg.setAttribute("src", srcArray[currentIndex]);
   popupImg.alt = altArray[currentIndex]
 }
+
+})

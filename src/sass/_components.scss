@@ -38,6 +38,16 @@
   }
 }
 
+.bold{
+  font-size:1.6rem;
+  font-weight: 500;
+  color:$text-color-first;
+
+  &--white{
+    color: $pure-white;
+  }
+}
+
 
 .btn-animation{
   &:hover {

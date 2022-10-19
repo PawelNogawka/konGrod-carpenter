@@ -8,6 +8,10 @@ const imagemin = require("gulp-imagemin");
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
+const gulp = require('gulp');
+const criticalCss = require('gulp-critical-css');
+
+
 
 const sass = require("gulp-sass")(require("sass"));
 
@@ -57,6 +61,8 @@ function watchFoChanges(done) {
   watch("src/img/*", convertImages).on("change", reload);
   done();
 }
+
+
 
 const mainFuctions = parallel(sassCompiler, javaScript, convertImages);
 

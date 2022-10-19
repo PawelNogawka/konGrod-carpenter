@@ -22,16 +22,25 @@
       rel="stylesheet"
     />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/css/style.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CCXPKE1CHH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CCXPKE1CHH");
+    </script>
+
+    <script src="https://kit.fontawesome.com/8af23b87f4.js" crossorigin="anonymous"></script>
+    <style>
+      [data-aos^=fade][data-aos^=fade]{opacity:0}[data-aos=fade-up]{transform:translate3d(0,100px,0)}.scroll-btn{display:none;position:fixed;bottom:4rem;right:4rem;width:4rem;height:4rem;background-color:#b7974f}.scroll-btn i{color:#fff;font-size:2.2rem}@media (min-width:1450px){.scroll-btn{display:flex;align-items:center;justify-content:center}}.bounce-top{display:block;animation:a 2s infinite both}@keyframes a{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}to{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;text-transform:capitalize;font-family:Poppins,Arial, Helvetica, sans-serif}html{font-size:62.5%;scroll-behavior:smooth;scroll-padding:7rem}body{width:100%;overflow-x:hidden}.header{position:fixed;top:0;left:0;display:flex;align-items:center;justify-content:space-between;width:100%;padding:2rem 3rem;z-index:2}.header__logo{z-index:2}.header__logo svg{width:5.5rem;height:auto}.header__nav{position:absolute;top:0;left:0;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;transform:translateY(-100%);background-color:#fff;z-index:1}.header__nav-link{margin:1.5rem 0;font-size:2rem;color:#1c1c1c}.header__menu-btn{width:4rem;height:4rem;display:flex;flex-direction:column;justify-content:space-evenly;z-index:2;border:.1rem solid transparent;background:0}.header__bar{height:.2rem;background-color:#fff}.header__bar--one{width:50%;height:.2rem}.header__bar--two{width:100%}.header__bar--three{width:50%;margin-left:auto;height:.2rem}.home{position:relative;min-height:100vh;padding:0 2rem;background:linear-gradient(90deg,rgba(28,28,28,.75) 100%,rgba(55,58,62,.75) 0),url(../images/maluy-header.jpg);background-position:50%;background-size:cover}.home,.home__banner{display:flex;align-items:center;justify-content:center}.home__banner{flex-direction:column;text-align:center;color:#fff}.home__heading{font-size:2.6rem}.home__sub-title{margin:2.5rem 0;font-size:1.4rem;color:#fff}.home__btn{padding:1rem 3rem;background-color:#b7974f;color:#fff;font-size:1.5rem}.home__arrow{position:absolute;bottom:5rem;left:50%;transform:translateX(-50%)}.home__arrow i{color:#fff;font-size:2.6rem}.projects__popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-image:linear-gradient(90deg,rgba(28,28,28,.75) 100%,rgba(55,58,62,.75) 0);z-index:3}.projects__btn{position:absolute;top:2rem;right:2rem;display:flex;align-items:center;justify-content:center;flex-direction:column;width:4.5rem;height:4.5rem;z-index:4}.projects__btn-line{width:3rem;height:.2rem;margin:.2rem 0;background-color:#fff;transform-origin:right}.projects__btn-line--1{transform:rotate(-40deg) translateY(-.8rem)}.projects__btn-line--2{transform:rotate(40deg) translateY(.8rem)}.projects__arrow{position:absolute;bottom:10%;width:3rem;height:3rem;border-left:.2rem solid #fff;border-bottom:.2rem solid #fff}.projects__arrow--left{left:3rem;transform:translateY(50%) rotate(45deg)}.projects__arrow--right{right:3rem;transform:translateY(50%) rotate(225deg)}.projects__popup-img{position:absolute;left:50%;top:50%;width:95%;height:auto;transform:translate(-50%,-50%);object-fit:cover;border:.5rem solid #fff}@media (min-width:576px){.home__heading{font-size:5rem}.projects__popup-img{width:87%}}@media (min-width:768px){.header{padding-left:4rem;padding-right:4rem}.header__nav-link{font-size:2.4rem}.home__heading{font-size:7rem}.home__sub-title{margin:3rem 0 4rem;font-size:1.7rem}.home__btn{font-size:1.6rem}.projects__popup-img{width:75%}.projects__arrow{bottom:50%}}@media (min-width:992px){.home{background-image:linear-gradient(90deg,rgba(28,28,28,.75) 100%,rgba(55,58,62,.75) 0),url(../images/duzy-header.jpg)}.header{padding:2rem 8rem}.header__nav{position:static;width:auto;height:auto;flex-direction:row;transform:translateY(0);background-color:transparent}.header__nav-link{margin:0 1.7rem;font-size:1.6rem;color:#fff}.header__nav-link:last-child{margin-left:6rem}.header__nav-link--cta{padding:1rem 3rem;background-color:#b7974f}.header__menu-btn{display:none}.projects__popup-img{width:50%}}
+    </style>
   </head>
   <body>
     <header class="header">
@@ -52,11 +61,11 @@
           </g>
         </svg>
       </a>
-      <div class="header__menu-btn">
-        <div class="header__bar header__bar--one"></div>
-        <div class="header__bar header__bar--two"></div>
-        <div class="header__bar header__bar--three"></div>
-      </div>
+      <button class="header__menu-btn">
+        <span class="header__bar header__bar--one"></span>
+        <span class="header__bar header__bar--two"></span>
+        <span class="header__bar header__bar--three"></span>
+      </button>
       <nav class="header__nav">
         <a href="#about" class="header__nav-link">o nas</a>
         <a href="#offers" class="header__nav-link">oferta</a>
@@ -93,7 +102,7 @@
                 alt="zamontowane elementy drewniane"
                 class="about__icon"
               />
-              <h3 class="about__counter-ammount">100+</h3>
+              <p class="about__counter-ammount">100+</p>
               <p class="about__counter-description">Wykonanych projektów</p>
             </div>
             <div class="about__counter">
@@ -102,7 +111,7 @@
                 alt="zadowoleni klienci"
                 class="about__icon"
               />
-              <h3 class="about__counter-ammount">100+</h3>
+              <p class="about__counter-ammount">150+</p>
               <p class="about__counter-description">Zadowolonych klientów</p>
             </div>
             <div class="about__counter">
@@ -111,8 +120,8 @@
                 alt="doswiadczenie stolarskie"
                 class="about__icon"
               />
-              <h3 class="about__counter-ammount">10</h3>
-              <p class="about__counter-description">lat doswiadczenia</p>
+              <p class="about__counter-ammount">10</p>
+              <p class="about__counter-description">lat doświadczenia</p>
             </div>
             <div class="about__counter">
               <img
@@ -120,7 +129,7 @@
                 alt="szkolenia oraz ukończone certyfukaty"
                 class="about__icon"
               />
-              <h3 class="about__counter-ammount">10+</h3>
+              <p class="about__counter-ammount">10+</p>
               <p class="about__counter-description">Szkoleń i certyfikatów</p>
             </div>
           </div>
@@ -130,6 +139,7 @@
                 src="./dist/images/o-nas.jpg"
                 alt="stolarnia konGrod"
                 class="about__img"
+                loading="lazy"
               />
             </div>
             <div class="about__text-box">
@@ -143,7 +153,11 @@
                 zaprojektowanie po przygotowanie wszelkich niezbędnych prac,
                 takich jak przygotowanie fundamentów, montaż pokryć dachowych,
                 montaż elektryki, czy innych instalacji, tak aby klient nie
-                musiał się niczym przejmować.
+                musiał się niczym przejmować.<b class="bold">
+                  Wykonujemy konstrukcje szkieletowe, wiaty garażowe, tarasy,
+                  altany oraz pergole, schody , również zajmujemy się renowacją
+                  domów drewnianych.
+                </b>
               </p>
               <a href="#form" class="about__btn btn-animation">zadaj pytanie</a>
             </div>
@@ -161,15 +175,15 @@
             >
               <img
                 src="./dist/images/icons/dom-z-drewna.svg"
-                alt=""
+                alt="konstrukcja szkieletowa"
                 class="offers__icon"
+                loading="lazy"
               />
-              <h3 class="offers__name">Domy</h3>
+              <h3 class="offers__name">Konstrukcje Szkieletowe</h3>
               <p class="offers__description">
-                Budujemy konstrukcje szkieletowe takie jak domy, domki
-                letniskowe, sezonowe i całoroczne. Zajmujemy się również budową
-                domków na zgłoszenie (35m2) oraz wymienianą drewnianych
-                elewacji.
+                wykonujemy w tej technologi takie obiekty jak: domki letniskowe
+                do 35m2, domy, garaże wolnostojące, pomieszczenia gospodarcze,
+                możemy także wykonać inne projekty w tej technologii.
               </p>
             </div>
             <div
@@ -179,13 +193,16 @@
             >
               <img
                 src="./dist/images/icons/garaz-samochodowy.svg"
-                alt=""
+                alt="drewniane garaże samochodowe"
                 class="offers__icon"
+                loading="lazy"
               />
-              <h3 class="offers__name">Garaże i carporty</h3>
+              <h3 class="offers__name">Wiaty Garażowe</h3>
               <p class="offers__description">
-                Budujemy garaże jedno, dwu i więcej stanowiskowe oraz wiaty
-                garażowe (carporty).
+                budujemy wiaty garażowe w różnych wymiarach od
+                jednostanowiskowych do trzy i więcej stanowisk wolno stojące, a
+                także przyłączone do innego obiektu. jest możliwość dobudowania
+                pomieszczenia gospodarczego.
               </p>
             </div>
             <div
@@ -195,14 +212,13 @@
             >
               <img
                 src="./dist/images/icons/taras-z-drewna-odkryty.svg"
-                alt=""
+                alt="tarasy drewniane"
                 class="offers__icon"
               />
               <h3 class="offers__name">Tarasy</h3>
               <p class="offers__description">
-                Wykonujemy tarasy drewniane, również z zadaszeniem. Zaplanujemy
-                rozkład mebli ogrodowych, aby jak najlepiej komponowały się z
-                tarasem.
+                wykonujemy tarasy z rodzimych gatunków drewna ( modrzew
+                europejski) a także z gatunków egzotycznych.
               </p>
             </div>
             <div
@@ -212,13 +228,16 @@
             >
               <img
                 src="./dist/images/icons/altana-ogrodowa-zamknieta.svg"
-                alt=""
+                alt="zamkniete altany ogrodowe"
                 class="offers__icon"
+                loading="lazy"
               />
-              <h3 class="offers__name">Altany</h3>
+              <h3 class="offers__name">Altany , Pergole</h3>
               <p class="offers__description">
-                Wykonujemy wolnostojące altany ogrodowe zarówno otwarte jak i
-                zamknięte.
+                altanki wykonujemy w wielu wariantach od tradycyjnych po
+                nowoczesne pergole z ażurami, drzwiami przesuwnymi, kryte
+                dachówką blachodachówką czy też poliwęglanem, możliwości
+                dopasowania jest ogromna.
               </p>
             </div>
             <div
@@ -228,14 +247,14 @@
             >
               <img
                 src="./dist/images/icons/schody-z-drewna.svg"
-                alt=""
+                alt="drewniane schody"
                 class="offers__icon"
+                loading="lazy"
               />
               <h3 class="offers__name">Schody</h3>
               <p class="offers__description">
-                Zajmujemy się budową schodów , takich jak: schody wachlarzowe,
-                spiralne, łamane, dwubiegunowe. Wykonujemy je z twardego drewna
-                na beton albo samonośne.
+                wykonujemy schody wewnętrzne samonośne lub na beton z
+                szlachetnych gatunków drewna typu dąb, jesion.
               </p>
             </div>
             <div
@@ -244,14 +263,14 @@
               class="offers__offer"
             >
               <img
-                src="./dist/images/icons/ogrod-zimowy.svg"
-                alt=""
+                src="./dist/images/icons/renowacje-starych-domow.svg"
+                alt="renowacje dachów drewnianych"
                 class="offers__icon"
+                loading="lazy"
               />
-              <h3 class="offers__name">Ogrody zimowe</h3>
+              <h3 class="offers__name">Renowacje</h3>
               <p class="offers__description">
-                Wykonujemy ogrody zimowe, jako obiekty wolnostojące zarówno jako
-                część architektury domu.
+                Zajmujemy się renowacją starych budynków drewnianych.
               </p>
             </div>
           </div>
@@ -266,6 +285,7 @@
                 src="./dist/images/icons/plan.svg"
                 alt="plan działania"
                 class="features__icon"
+                loading="lazy"
               />
               <h3 class="features__name">przygotujemy plan</h3>
             </div>
@@ -274,6 +294,7 @@
                 src="./dist/images/icons/doradzimy.svg"
                 alt="doradzimy wybrać najlepszą opcję"
                 class="features__icon"
+                loading="lazy"
               />
               <h3 class="features__name">doradzimy</h3>
             </div>
@@ -282,6 +303,7 @@
                 src="./dist/images/icons/projekt-domu.svg"
                 alt="projekt domu"
                 class="features__icon"
+                loading="lazy"
               />
               <h3 class="features__name">zaprojektujemy</h3>
             </div>
@@ -290,6 +312,7 @@
                 src="./dist/images/icons/transport-materialow.svg"
                 alt="transport materiałów"
                 class="features__icon"
+                loading="lazy"
               />
               <h3 class="features__name">przywieziemy</h3>
             </div>
@@ -298,6 +321,7 @@
                 src="./dist/images/icons/montaż-elementow.svg"
                 alt="montaż elementów"
                 class="features__icon"
+                loading="lazy"
               />
               <h3 class="features__name">zamontujemy</h3>
             </div>
@@ -305,7 +329,8 @@
               <img
                 class="features__icon"
                 src="./dist/images/icons/optymalizacja.svg"
-                alt=""
+                alt="proces optymalizacji"
+                loading="lazy"
               />
               <h3 class="features__name">zoptymalizujemy</h3>
             </div>
@@ -314,8 +339,9 @@
             <div class="features__img-container">
               <img
                 src="./dist/images/planowanie-budowy.jpg"
-                alt=""
+                alt="zaplanujemy budowe domu"
                 class="features__img"
+                loading="lazy"
               />
             </div>
             <div class="features__text-container">
@@ -326,8 +352,11 @@
               <p class="p features__text-small">
                 Dzięki doświadczeniu jakie posiada nasz zespół nie boimy się
                 nowych wyzwań i podejmiemy się wszelkich realizacji, a nasi
-                klienci cieszą się własnymi tarasami, altanami oraz innymi
-                projektami.
+                klienci cieszą się własnymi
+                <b class="bold"> tarasami, altanami oraz innymi projektami.</b>
+                Nasze realizacje wykonujemy na terenie
+                <b class="bold">rabki zdrój</b> oraz okolicach, ale jesteśmy
+                gotowi na dalsze wyjazdy, aby zbudować coś wyjątkowego.
               </p>
               <div class="features__check-box">
                 <div class="features__check">
@@ -359,9 +388,10 @@
         <h2 class="section-heading section-heading--white">B2B</h2>
         <div class="wrapper">
           <p class="business__info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo,
-            amet voluptatem asperiores necessitatibus voluptate porro eius
-            repudiandae earum consequatur.
+            Ciągle chcemy się rozwijać i uważamy, że współpraca z innymi to
+            ważny element rozwoju firmy. Dlatego zachęcamy do zapoznania się z
+            naszą ofertą
+            <b class="bold bold--white">współpracy biznesowej</b> oraz kontaktu.
           </p>
           <a href="./b2b.html" class="business__btn btn-animation"
             >Czytaj więcej</a
@@ -381,6 +411,7 @@
                 src="./dist/images/projects/taras-drewniany-zadaszony.jpg"
                 alt="zadaszony taras drewniany"
                 class="projects__img"
+                loading="lazy"
               />
               <div class="projects__icon">
                 <img
@@ -399,6 +430,7 @@
                 src="./dist/images/projects/altana-wolnostojąca.jpg"
                 alt="altana wolnostojąca"
                 class="projects__img"
+                loading="lazy"
               />
               <div class="projects__icon">
                 <img
@@ -417,6 +449,7 @@
                 src="./dist/images/projects/taras-drewniany-odkryty.jpg"
                 alt="odkryty taras drewniany"
                 class="projects__img"
+                loading="lazy"
               />
               <div class="projects__icon">
                 <img
@@ -435,6 +468,7 @@
                 src="./dist/images/projects/dębowe-schody-gięte.jpg"
                 alt="dębowe schody gięte"
                 class="projects__img"
+                loading="lazy"
               />
               <div class="projects__icon">
                 <img
@@ -471,6 +505,7 @@
                 src="./dist/images/projects/sklep-z-drewna-klejonego.jpg"
                 alt="sklep z drewna klejonego"
                 class="projects__img"
+                loading="lazy"
               />
               <div class="projects__icon">
                 <img
@@ -507,36 +542,22 @@
             <div class="customers__customer swiper-slide">
               <i class="fa-solid fa-quote-right"></i>
               <p class="customers__quote">
-                Firma p. Dawida wykonała perfekcyjnie moją białą pergolę.
-                Wszystko solidnie, w umówionym terminie, zgodnie z ustaleniami.
-                Panowie potrafili fachowo doradzić i idealnie dopasować pergolę
-                do trudnego terenu. Wszystko zorganizowali sami. Jakość na
-                najwyższym poziomie. Profesjonalne podejście do klienta. Cała
-                ekipa Super!! Bardzo polecam.
+                Firma p. Dawida zrealizowała doskonale moją białą pergolę. Wszystko rzetelnie, w ustalonym terminie, według ustaleniami. Panowie umieli profesjonalnie doradzić i doskonale dopasować pergolę do problematycznego obszaru. Wszystko budowali sami. Klasa na najwyższym poziomie. Wysokiej klasy nastawienie na klienta. Cała ekipa Na medal!! Bardzo serdecznie
+                 polecam.
               </p>
               <p class="customers__name">Grazyna S</p>
             </div>
             <div class="customers__customer swiper-slide">
               <i class="fa-solid fa-quote-right"></i>
               <p class="customers__quote">
-                Polecam firmę KonGrod z Rabki i jej właściciela. Pan Dawid
-                wykonał dla mnie zadaszenie nad tarasem jak również przerobił
-                wiatę garażową, tak by była bardziej funkcjonalna i lepiej
-                wyglądała. Obie prace wykonane terminowo, fachowo, zgodnie z
-                ustaleniami. Mogę polecić jako solidna firma, która wykonuje
-                swoje prace jak najbardziej profesjonalnie i solidnie.
+                Polecam firmę KonGrod z Rabki oraz jej właściciela. Pan Dawid zrealizował dla mnie zadaszenie nad tarasem  jednocześnie przerobił wiatę garażową, tak aby była o wiele bardziej funkcjonalna a także lepiej się prezentowała. Obydwa zadania zakończone terminowo, profesjonalnie, solidarnie z ustaleniami. Jestem w stanie polecić KonGrod jako uczciwą firme, która wykonuje realizacje nade wszystko profesjonalnie i rzetelnie.
               </p>
               <p class="customers__name">Andrzej K</p>
             </div>
             <div class="customers__customer swiper-slide">
               <i class="fa-solid fa-quote-right"></i>
               <p class="customers__quote">
-                Zadaszenie tarasu prawie 50m kwadratowych wykonane bardzo
-                profesjonalnie. Każdy szczegół wykończony z pełną prezycją oraz
-                dokładnością. W szczególności jest brane pod uwagę zdanie
-                klienta a także do tego kreatywność, doradztwo ze strony firmy.
-                Bardzo miła atmosfera w czasie współpracy i z całego serca
-                polecam !!!
+                Zadaszenie tarasu niemal 50m kwadratowych ukończone bardzo fachowo. Wszelki drobiazg wykonany z niebywałą precyzją i skupieniem. Szczególnie przez firmę jest brane pod uwagę zdanie klienta, które połączone z kreatywnością oraz profesjonalnymi poradami ze strony firmy stanowią idealną całość. Świetna atmosfera w czasie współpracy i bardzo gorąco całego serca polecam !
               </p>
               <p class="customers__name">Niebo J</p>
             </div>
@@ -559,7 +580,7 @@
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="contact__method-info">
-                <h3 class="contact__name">Telefon</h3>
+                <h4 class="contact__name">Telefon</h4>
                 <a href="tel:+48576953624" class="contact__link"
                   >+48 576 953 624</a
                 >
@@ -574,8 +595,10 @@
                 <i class="fa-solid fa-envelope"></i>
               </div>
               <div class="contact__method-info">
-                <h3 class="contact__name">email</h3>
-                <a href="#form" class="contact__link">KonGrod.pl@gmail.com</a>
+                <h4 class="contact__name">email</h4>
+                <a href="#form" class="contact__link contact__link--lowercase"
+                  >kongrod.pl@gmail.com</a
+                >
               </div>
             </div>
             <div
@@ -587,7 +610,7 @@
                 <i class="fa-solid fa-map-location-dot"></i>
               </div>
               <div class="contact__method-info">
-                <h3 class="contact__name contact__name--address">Adres</h3>
+                <h4 class="contact__name contact__name--address">Adres</h4>
                 <a href="#map" class="contact__link contact__link--small"
                   >Poniatowskiego 118, 34-700 Rabka-Zdrój</a
                 >
@@ -603,21 +626,38 @@
             <h4 class="contact__text">
               Napisz do nas aby dowiedzieć się więcej.
             </h4>
-            <form class="contact__form">
+            <form action="mail.php" method="post" class="contact__form">
               <div class="contact__input-box">
                 <label for="name" class="contact__label">Imię:</label>
-                <input type="text" class="contact__input" id="name" />
+                <input
+                  name="name"
+                  type="text"
+                  class="contact__input"
+                  id="name"
+                  required
+                />
               </div>
               <div class="contact__input-box">
                 <label for="email" class="contact__label">email:</label>
-                <input type="email" class="contact__input" id="email" />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  class="contact__input contact__input--lowercase"
+                  required
+                />
               </div>
               <div class="contact__input-box">
                 <label for="textarea" class="contact__label">wiadomość:</label>
-                <textarea id="textarea" class="contact__textarea"></textarea>
+                <textarea
+                  name="message"
+                  id="textarea"
+                  class="contact__textarea"
+                  required
+                ></textarea>
               </div>
 
-              <button class="contact__button btn-animation">
+              <button type="submit" class="contact__button btn-animation">
                 Wyślij wiadomość
               </button>
             </form>
@@ -637,7 +677,7 @@
         ></iframe>
       </div>
       <div class="contact__social-media">
-        <h3 class="contact__social-heading">Śledź nasze projekty na:</h3>
+        <h4 class="contact__social-heading">Śledź nasze projekty na:</h4>
         <div class="contact__social-icons">
           <a
             href="https://pl-pl.facebook.com/KonGrod.eu/"
@@ -667,7 +707,13 @@
     <a href="#home" class="scroll-btn btn-animation"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/js/aos.min.js"></script>
